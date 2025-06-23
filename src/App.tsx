@@ -4,6 +4,7 @@ function App() {
 
   const [circleRadius, setCircleRadius] = useState<string>("50");
   const [circlePositionX, setCirclePositionX] = useState<string>("100");
+  const [circlePositionY, setCirclePositionY] = useState<string>("100");
 
   return (
     <>
@@ -35,6 +36,17 @@ function App() {
         />
         <br/>
 
+        Circle Y Position: {circlePositionY}
+        <br/>
+        <input
+          type="range"
+          min="50"
+          max="150"
+          value={circlePositionY}
+          onChange={(e) => setCirclePositionY(e.target.value)}
+        />
+        <br/>
+
         <svg
           width="100"
           height="100"
@@ -42,7 +54,7 @@ function App() {
         >
           <circle 
             cx={circlePositionX}
-            cy="100"
+            cy={circlePositionY}
             r={circleRadius} 
             fill="red" 
             className="circle"
