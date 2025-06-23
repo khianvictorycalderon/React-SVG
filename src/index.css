@@ -1,0 +1,5 @@
+.circle {
+    fill: none;
+    stroke: blue; /* overrides the fill="red" */
+    stroke-width: 5;
+}
