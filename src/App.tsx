@@ -64,7 +64,42 @@ function App() {
         </svg>  
 
         <hr/>
+        <h4>Rectangle</h4>
 
+        <svg
+          width="200"
+          height="200"
+          viewBox="0 0 200 200"  
+        >
+          <rect
+            y="110"
+            x="0"
+            width="40"
+            height="200"
+            fill="blue"
+          />
+          <rect
+            y="130"
+            x="50"
+            width="40"
+            height="200"
+            fill="blue"
+          />
+          <rect
+            y="90"
+            x="100"
+            width="40"
+            height="200"
+            fill="blue"
+          />
+          <rect
+            y="70"
+            x="150"
+            width="40"
+            height="200"
+            fill="blue"
+          />
+        </svg>
 
       </div>
     </>
