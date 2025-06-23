@@ -24,7 +24,7 @@ function App() {
         />
         <br/>
 
-        Circle X Position: {circleRadius}
+        Circle X Position: {circlePositionX}
         <br/>
         <input
           type="range"
