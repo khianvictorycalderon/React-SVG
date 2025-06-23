@@ -3,3 +3,7 @@
     stroke: blue; /* overrides the fill="red" */
     stroke-width: 5;
 }
+
+.content {
+    padding-left: 2rem;
+}
