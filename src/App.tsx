@@ -1,11 +1,25 @@
+import { useState } from "react"
+
 function App() {
+
+  const [circleRadius, setCircleRadius] = useState<string>("50");
+
   return (
     <>
       <h1>
         React with SVG
       </h1>
       <hr/>
-      Circle:
+      Circle Radius: {circleRadius}
+      <input
+        type="range"
+        min="10"
+        max="50"
+        value={circleRadius}
+        onChange={(e) => setCircleRadius(e.target.value)}
+        className="w-full"
+      />
+      <br/>
       <svg
         width="100"
         height="100"
@@ -14,7 +28,7 @@ function App() {
         <circle 
           cx="100"
           cy="100" 
-          r="50" 
+          r={circleRadius} 
           fill="red" 
           className="circle"
           />
