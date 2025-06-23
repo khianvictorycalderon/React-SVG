@@ -14,7 +14,9 @@ function App() {
       <hr/>
       <div className="content">
 
-        Circle Radius: {circleRadius}
+        <h4>Circle</h4>
+
+        Radius: {circleRadius}
         <br/>
         <input
           type="range"
@@ -25,7 +27,7 @@ function App() {
         />
         <br/>
 
-        Circle X Position: {circlePositionX}
+        X Position: {circlePositionX}
         <br/>
         <input
           type="range"
@@ -36,7 +38,7 @@ function App() {
         />
         <br/>
 
-        Circle Y Position: {circlePositionY}
+        Y Position: {circlePositionY}
         <br/>
         <input
           type="range"
@@ -60,6 +62,10 @@ function App() {
             className="circle"
             />
         </svg>  
+
+        <hr/>
+
+
       </div>
     </>
   )
